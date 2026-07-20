@@ -143,6 +143,7 @@
     padding: clamp(14px, 3vw, 30px) clamp(20px, 5vw, 56px) 40px;
     display: grid; gap: clamp(18px, 2.6vw, 28px);
     grid-template-columns: repeat(2, 1fr);
+    align-items: start;
     flex: 1;
   }
   @media (max-width: 720px) { .grid { grid-template-columns: 1fr; } }
@@ -165,7 +166,7 @@
   .card:focus-visible { border-color: var(--accent); }
 
   .cover {
-    position: relative; height: clamp(160px, 20vw, 200px);
+    position: relative; height: clamp(200px, 25vw, 280px);
     display: grid; place-items: center; overflow: hidden;
   }
   .card .cover .emoji {
