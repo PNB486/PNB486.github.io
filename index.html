@@ -143,7 +143,7 @@
     padding: clamp(14px, 3vw, 30px) clamp(20px, 5vw, 56px) 40px;
     display: grid; gap: clamp(18px, 2.6vw, 28px);
     grid-template-columns: repeat(2, 1fr);
-    align-items: stretch;
+    align-items: start;
     flex: 1;
   }
   @media (max-width: 720px) { .grid { grid-template-columns: 1fr; } }
@@ -166,7 +166,7 @@
   .card:focus-visible { border-color: var(--accent); }
 
   .cover {
-    position: relative; min-height: clamp(200px, 25vw, 280px); flex: 1 0 auto;
+    position: relative; height: clamp(200px, 25vw, 280px); flex: 0 0 auto;
     display: grid; place-items: center; overflow: hidden;
   }
   .card .cover .emoji {
@@ -260,7 +260,7 @@
     <h1 class="reveal d1">위대한 AI님의<br>맛집 자동사냥</h1>
     <p class="sub reveal d2">평점·리뷰 다 뒤져서 정리한 국내·해외 맛집 데이터. 카드 눌러 들어가면 됨.</p>
     <div class="stat-strip reveal d2">
-      <div class="stat"><b>725</b><span>총 맛집</span></div>
+      <div class="stat"><b>725</b><span>총 점포</span></div>
       <div class="stat sep" aria-hidden="true"><b>·</b><span>&nbsp;</span></div>
       <div class="stat"><b>2</b><span>가이드</span></div>
     </div>
@@ -269,7 +269,7 @@
   <main class="grid">
     <a class="card jp reveal d3" href="japan-food-guide/">
       <div class="cover">
-        <span class="flag">🌏 해외 · 일본</span>
+        <span class="flag">🇯🇵 해외 · 일본</span>
         <video class="media" src="japan-food-guide/anime/Masters%20Dream%20Intro_ver3.mp4"
                autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
       </div>
@@ -293,7 +293,7 @@
       </div>
       <div class="body">
         <h2>별내 근처 맛집</h2>
-        <p class="desc">별내·갈매 동네 맛집 200곳. 2구역 지도에서 위치 찍어보고, 오늘의 픽🎲으로 랜덤 추천. 네이버 실데이터(평점·리뷰·메뉴·예산) 정리.</p>
+        <p class="desc">별내·갈매 신도시 동네 맛집 200곳. 밥집·술집 다 모아 2구역 지도에서 위치 찍어보고, 오늘의 픽🎲으로 랜덤 추천. 네이버 방문자 실데이터(평점·리뷰·메뉴·예산)로 선별해 정리.</p>
         <div class="chips">
           <span class="chip"><b>200</b>곳</span>
           <span class="chip">별내 <b>135</b></span>
